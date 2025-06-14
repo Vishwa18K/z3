@@ -1,1 +1,1 @@
-This branch contains only the Z3 syntax and JS syntax seperately. If you want to use either in place of the file in the syntax folder found in main branch then you have to edit launch and package.json with the correct file name.
+This branch contains only the Z3 syntax and JS syntax seperately. If you want to use either in place of the file in the syntax folder found in main branch then you have to edit package.json with the correct file path/name (under path field).
