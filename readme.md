@@ -1,0 +1,1 @@
+This branch contains only the z3 syntax with no js support. If you want to use this in place of the file in the syntax folder found in main branch then you have to edit launch and package.json with the correct file name.
