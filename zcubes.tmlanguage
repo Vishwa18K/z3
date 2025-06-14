@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>name</key>
+  <string>ZCubes</string>
+  <key>scopeName</key>
+  <string>source.zcubes</string>
+  <key>fileTypes</key>
+  <array>
+    <string>z3</string>
+    <string>zc</string>
+  </array>
+
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>include</key>
+      <string>#z3-keyword-print</string>
+    </dict>
+    <dict>
+      <key>include</key>
+      <string>#z3-operator</string>
+    </dict>
+    <dict>
+      <key>include</key>
+      <string>#z3-bitwise-operators</string>
+    </dict>
+    <dict>
+      <key>include</key>
+      <string>#z3-hash-suffix-operator</string>
+    </dict>
+
+    <dict>
+      <key>include</key>
+      <string>#strings</string>
+    </dict>
+
+    <dict>
+      <key>include</key>
+      <string>#PLACEHOLDER1</string>
+    </dict>
+    <dict>
+      <key>include</key>
+      <string>#PLACEHOLDER2</string>
+    </dict>
+    <dict>
+      <key>include</key>
+      <string>#shebang</string>
+    </dict>
+
+    <dict>
+      <key>begin</key>
+      <string>&lt;script&gt;</string>
+      <key>end</key>
+      <string>&lt;/script&gt;</string>
+      <key>name</key>
+      <string>meta.embedded.block.js.zcubes</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>source.js</string>
+        </dict>
+      </array>
+    </dict>
+  </array>
+
+  <key>repository</key>
+  <dict>
+    <key>z3-keyword-print</key>
+    <dict>
+      <key>match</key>
+      <string>\b(PRINT|SUM|⋰)\b</string>
+      <key>name</key>
+      <string>keyword.control.zcubes</string>
+    </dict>
+
+    <key>z3-operator</key>
+    <dict>
+      <key>match</key>
+      <string>(@|~|↑|↓|⧓|⧒|⋈|√)</string>
+      <key>name</key>
+      <string>keyword.operator.z3</string>
+    </dict>
+
+    <key>z3-bitwise-operators</key>
+    <dict>
+      <key>match</key>
+      <string>(&amp;)</string>
+      <key>name</key>
+      <string>keyword.operator.bitwise.z3</string>
+    </dict>
+
+    <key>z3-hash-suffix-operator</key>
+    <dict>
+      <key>match</key>
+      <string>(?=\w)#</string>
+      <key>name</key>
+      <string>keyword.operator.suffix.z3.hash</string>
+    </dict>
+
+    <key>strings</key>
+    <dict>
+      <key>begin</key>
+      <string>"</string>
+      <key>end</key>
+      <string>"</string>
+      <key>name</key>
+      <string>string.quoted.double.zcubes</string>
+    </dict>
+
+    <key>PLACEHOLDER1</key>
+    <dict>
+    </dict>
+
+    <key>PLACEHOLDER2</key>
+    <dict>
+    </dict>
+
+    <key>shebang</key>
+    <dict>
+    </dict>
+  </dict>
+
+  <key>uuid</key>
+  <string>6f7e4567-a1d2-4b7c-bfc3-5555cccc9999</string>
+</dict>
+</plist>
